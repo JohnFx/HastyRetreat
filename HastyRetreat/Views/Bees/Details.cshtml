@@ -1,0 +1,72 @@
+﻿@model HastyRetreat.Models.Bee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+<div id="images" class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <img src="~/Content/Images/bee.png" alt="Picture of a bee" />
+        </div>
+    </div>
+</div>
+<div>
+    <h4>Bee</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.isAngry)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.isAngry)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Role)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Role)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Species)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Species)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sound)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sound)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.canSting)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.canSting)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
