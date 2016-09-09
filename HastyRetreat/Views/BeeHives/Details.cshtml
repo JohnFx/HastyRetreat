@@ -2,10 +2,17 @@
 
 @{
     ViewBag.Title = "Details";
+    ViewBag.MainImage = "hive.png";
 }
 
 <h2>Details</h2>
-
+<div id="images" class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <img src="~/Content/Images/@ViewBag.MainImage" class="mainImage" alt="Picture of a hive" />
+        </div>
+    </div>
+</div>
 <div>
     <h4>BeeHive</h4>
     <hr />
